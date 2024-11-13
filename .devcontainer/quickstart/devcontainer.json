@@ -2,7 +2,7 @@
   "name": "kkumtree-codespaces-scp-2024",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   "hostRequirements": {
-    "cpus": 4
+    "cpus": 2
   },
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
