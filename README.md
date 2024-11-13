@@ -11,4 +11,6 @@
 - [Setting your default editor](https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-default-editor-for-github-codespaces#setting-your-default-editor)
   - Link: <https://github.com/settings/codespaces>  
   - Path: Editor preference > `Check` Visual Studio Code for Web  
+    ![Check VSCode for Web](https://github.com/user-attachments/assets/514c7e4b-4fdd-463c-a20e-fe68d8da15bc)
+
 - Thank you!  
