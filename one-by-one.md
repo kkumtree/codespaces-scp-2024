@@ -50,30 +50,35 @@ tree -L 2
 ├── static
 └── themes
     └── ananke
-```
+```  
 
-```bash
-echo "theme = 'ananke'" >> hugo.toml
-hugo server
-```
+```bash  
+echo "theme = 'ananke'" >> hugo.toml  
+hugo server  
+```  
 
-## Chores
+## Chores  
 
-### Stackoverflow
+### Stackoverflow  
 
 - <https://stackoverflow.com/a/26752628>  
 
 - Original  
 
 ```bash  
-# git rm --cached themes/ananke
-mv subfolder subfolder_tmp
-git submodule deinit subfolder
-git rm --cached subfolder
-mv subfolder_tmp subfolder
-git add subfolder
+mv subfolder subfolder_tmp  
+git submodule deinit subfolder  
+git rm --cached subfolder  
+mv subfolder_tmp subfolder  
+git add subfolder  
 ```  
 
 - Derived  
 
-```
+```bash  
+mv themes/ananke/ themes/bianchi
+git submodule deinit themes/ananke
+git rm --cached themes/ananke
+rm -rf themes/ananke  
+mv themes/bianchi/ themes/ananke/
+```  
