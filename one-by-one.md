@@ -6,7 +6,7 @@
 
 ```bash
 git remote  
-git checkout devkimchi
+git checkout playground
 ```
 
 ## Bootstrapper  
@@ -14,18 +14,23 @@ git checkout devkimchi
 ```bash
 pwd
 # Confirm that we are in `/workspaces/codespaces-scp-2024`
-hugo new site . --force
+mkdir srcs && cd srcs
+hugo new site . 
 ```
 
 ## Submodule
 
 ```bash
+pwd
+# Confirm that we are in `/workspaces/codespaces-scp-2024/srcs`  
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 ```
 
 ### Playground
 
 ```bash
+pwd
+# Confirm that we are in `/workspaces/codespaces-scp-2024/srcs`
 git submodule deinit -f themes/ananke
 rm -rf .git/modules/themes/ananke
 git rm -f themes/ananke
@@ -35,6 +40,8 @@ git submodule add --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke
 ## Check folder tree
 
 ```bash
+pwd
+# Confirm that we are in `/workspaces/codespaces-scp-2024/srcs`
 tree -L 2
 .
 ├── archetypes
@@ -53,6 +60,8 @@ tree -L 2
 ```  
 
 ```bash  
+pwd
+# Confirm that we are in `/workspaces/codespaces-scp-2024/srcs`
 echo "theme = 'ananke'" >> hugo.toml  
 hugo server  
 ```  
