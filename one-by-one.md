@@ -63,11 +63,17 @@ hugo server
 
 - <https://stackoverflow.com/a/26752628>  
 
-```bash
+- Original  
+
+```bash  
 # git rm --cached themes/ananke
 mv subfolder subfolder_tmp
 git submodule deinit subfolder
 git rm --cached subfolder
 mv subfolder_tmp subfolder
 git add subfolder
+```  
+
+- Derived  
+
 ```
