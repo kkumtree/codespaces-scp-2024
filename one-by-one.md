@@ -1,4 +1,12 @@
-# Tutorial  
+# Tutorial 
+
+## Add Remote  
+
+- SOURCE CONTROL > Remote > Add Remote  
+
+```bash
+git remote  
+```
 
 ## Bootstrapper  
 
@@ -11,7 +19,39 @@ hugo new site . --force
 ## Submodule
 
 ```bash
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+```
+
+### Playground
+
+```bash
+git submodule deinit -f themes/ananke
+rm -rf .git/modules/themes/ananke
+git rm -f themes/ananke
 git submodule add --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+```
+
+## Check folder tree
+
+```bash
+tree
+.
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+├── one-by-one.md
+├── README.md
+├── static
+└── themes
+    └── ananke
+```
+
+```bash
 echo "theme = 'ananke'" >> hugo.toml
 hugo server
 ```
