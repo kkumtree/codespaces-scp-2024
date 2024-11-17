@@ -19,7 +19,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "one-by-one.md"
+        "README.md"
       ]
     }
   },
