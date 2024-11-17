@@ -6,6 +6,7 @@
 
 ```bash
 git remote  
+git checkout devkimchi
 ```
 
 ## Bootstrapper  
@@ -34,7 +35,7 @@ git submodule add --depth 1 https://github.com/theNewDynamic/gohugo-theme-ananke
 ## Check folder tree
 
 ```bash
-tree
+tree -L 2
 .
 ├── archetypes
 │   └── default.md
