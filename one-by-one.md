@@ -56,3 +56,18 @@ tree -L 2
 echo "theme = 'ananke'" >> hugo.toml
 hugo server
 ```
+
+## Chores
+
+### Stackoverflow
+
+- <https://stackoverflow.com/a/26752628>  
+
+```bash
+# git rm --cached themes/ananke
+mv subfolder subfolder_tmp
+git submodule deinit subfolder
+git rm --cached subfolder
+mv subfolder_tmp subfolder
+git add subfolder
+```
