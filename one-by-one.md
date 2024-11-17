@@ -82,3 +82,20 @@ git rm --cached themes/ananke
 rm -rf themes/ananke  
 mv themes/bianchi/ themes/ananke/
 ```  
+
+### diff
+
+```bash
+tree resources
+# resources
+# └── _gen
+#     └── assets
+#         └── ananke
+#             └── css
+#                 ├── main.css_9d7c906d8fe82fddbbd923faebb24419.content
+#                 └── main.css_9d7c906d8fe82fddbbd923faebb24419.json
+```
+
+```html
+<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+```
